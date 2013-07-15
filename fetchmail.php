@@ -1,5 +1,4 @@
 #!/usr/bin/php
-
 <?php
 
   #Configuration path, with trailing slash
@@ -35,6 +34,6 @@
 
     exec($cmd);
 	}
-  	
+
 	$result->close();
 ?>
