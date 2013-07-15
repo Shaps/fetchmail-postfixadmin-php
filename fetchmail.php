@@ -24,9 +24,9 @@
 		$cmd = 'imapsync --tmpdir /var/vmail/imapsynctmp --buffersize 8192000\
     --host1 '.$user->src_server.'\
     --host2 localhost\
-		--nosyncacls --subscribe_all --syncinternaldates --useuid --ssl1 --ssl2 \
-		--pidfile /tmp/'.$user->mailbox.'.pid\
-		--authmech1 LOGIN --authmech2 LOGIN \
+    --nosyncacls --subscribe_all --syncinternaldates --useuid --ssl1 --ssl2 \
+    --pidfile /tmp/'.$user->mailbox.'.pid\
+    --authmech1 LOGIN --authmech2 LOGIN \
     --user1 '.$user->mailbox.'\
     --user2 '.$user->mailbox.'\
     --password1 '.base64_decode($user->src_password).'\
